@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+  ШАБЛОН СТАТЬИ БЛОГА. Как добавить статью — см. README.md.
+  Скопируйте файл, переименуйте в slug-stati.html и замените все {{...}}.
+-->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ЗАГОЛОВОК СТАТЬИ}} | iWeb.uz</title>
+  <meta name="description" content="{{Описание 140–160 символов для поисковиков}}">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#05060f">
+  <link rel="canonical" href="https://iweb.uz/blog/{{slug-stati}}.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="iWeb.uz">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="{{ЗАГОЛОВОК СТАТЬИ}}">
+  <meta property="og:description" content="{{Короткое описание для соцсетей}}">
+  <meta property="og:url" content="https://iweb.uz/blog/{{slug-stati}}.html">
+  <meta property="og:image" content="https://iweb.uz/img/og-image.png">
+  <meta property="article:published_time" content="{{ГГГГ-ММ-ДД}}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ЗАГОЛОВОК СТАТЬИ}}",
+    "description": "{{Описание 140–160 символов для поисковиков}}",
+    "image": "https://iweb.uz/img/og-image.png",
+    "datePublished": "{{ГГГГ-ММ-ДД}}",
+    "dateModified": "{{ГГГГ-ММ-ДД}}",
+    "inLanguage": "ru",
+    "mainEntityOfPage": "https://iweb.uz/blog/{{slug-stati}}.html",
+    "author": { "@type": "Organization", "name": "iWeb.uz", "url": "https://iweb.uz/" },
+    "publisher": { "@type": "Organization", "name": "iWeb.uz", "logo": { "@type": "ImageObject", "url": "https://iweb.uz/img/favicon.svg" } }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://iweb.uz/" },
+      { "@type": "ListItem", "position": 2, "name": "Блог", "item": "https://iweb.uz/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "{{Короткое название}}" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../" class="logo" aria-label="iWeb.uz — на главную">
+        <span class="logo__mark">i</span><span class="logo__text">Web<span class="logo__dot">.uz</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a href="../#services" class="nav__link">Услуги</a></li>
+          <li><a href="../#process" class="nav__link">Как работаем</a></li>
+          <li><a href="../#portfolio" class="nav__link">Портфолио</a></li>
+          <li><a href="../#about" class="nav__link">О нас</a></li>
+          <li><a href="./" class="nav__link is-active">Блог</a></li>
+          <li><a href="../#contact" class="nav__link">Контакты</a></li>
+        </ul>
+        <a href="../#contact" class="btn btn--primary nav__cta">Обсудить проект</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="../">Главная</a></li>
+            <li><a href="./">Блог</a></li>
+            <li aria-current="page">{{Короткое название}}</li>
+          </ol>
+        </nav>
+        <h1>{{Заголовок H1 — можно выделить часть: <span class="gradient-text">ключевая фраза</span>}}</h1>
+        <div class="article-meta">
+          <time datetime="{{ГГГГ-ММ-ДД}}">{{5 октября 2026}}</time>
+          <span>·</span><span>{{N}} минут чтения</span>
+          <span class="tag">{{Рубрика}}</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container article-layout">
+      <article class="article">
+        <p>{{Вступление: 2–3 предложения о том, какую проблему решает статья.}}</p>
+
+        <h2>{{Подзаголовок раздела 1}}</h2>
+        <p>{{Текст раздела. Подзаголовки H2 автоматически попадают в оглавление.}}</p>
+
+        <h2>{{Подзаголовок раздела 2}}</h2>
+        <ul>
+          <li>{{Пункт списка}}</li>
+          <li>{{Пункт списка}}</li>
+        </ul>
+
+        <div class="cta-box">
+          <h3>{{Призыв к действию}}</h3>
+          <p>{{Короткий текст}}</p>
+          <a href="../#contact" class="btn btn--primary">Оставить заявку</a>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <div class="sidebar__sticky">
+          <div class="widget">
+            <h3>Содержание</h3>
+            <ol class="toc" id="toc"></ol>
+          </div>
+          <div class="widget widget--cta">
+            <h3>Нужен сайт?</h3>
+            <p>Бесплатная консультация и оценка проекта за 1 день.</p>
+            <a href="../#contact" class="btn btn--primary btn--full">Оставить заявку</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="related">
+      <div class="container">
+        <h2 class="section__title">Читайте также</h2>
+        <div class="posts">
+          <article class="post-card">
+            <a href="skolko-stoit-sajt-v-tashkente.html" class="post-card__link">
+              <div class="post-card__cover post-card__cover--1"></div>
+              <div class="post-card__body">
+                <time datetime="2026-10-05">5 октября 2026</time>
+                <h3>Сколько стоит сайт в Ташкенте: из чего складывается цена</h3>
+              </div>
+            </a>
+          </article>
+          <article class="post-card">
+            <a href="seo-prodvizhenie-v-uzbekistane.html" class="post-card__link">
+              <div class="post-card__cover post-card__cover--2"></div>
+              <div class="post-card__body">
+                <time datetime="2026-09-24">24 сентября 2026</time>
+                <h3>SEO-продвижение в Узбекистане: пошаговый план на старте</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../" class="logo"><span class="logo__mark">i</span><span class="logo__text">Web<span class="logo__dot">.uz</span></span></a>
+        <p>Разработка сайтов и digital-решений в Узбекистане.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a href="../#services">Услуги</a>
+        <a href="../#portfolio">Портфолио</a>
+        <a href="./">Блог</a>
+        <a href="../#contact">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span class="year"></span> iWeb.uz. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">&#8593;</button>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

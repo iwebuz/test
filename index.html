@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iWeb.uz — разработка сайтов и digital-решений в Узбекистане</title>
+  <meta name="description" content="iWeb.uz — веб-студия в Ташкенте: разработка сайтов, интернет-магазинов, веб-приложений, SEO-продвижение и поддержка. Современный дизайн и быстрые сайты для бизнеса в Узбекистане.">
+  <meta name="keywords" content="разработка сайтов Ташкент, создание сайтов Узбекистан, веб-студия, интернет-магазин, SEO продвижение, iWeb.uz">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05060f">
+  <link rel="canonical" href="https://iweb.uz/">
+
+  <!-- Open Graph / соцсети -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="iWeb.uz">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="iWeb.uz — разработка сайтов и digital-решений">
+  <meta property="og:description" content="Создаём быстрые, красивые и продающие сайты для бизнеса в Узбекистане.">
+  <meta property="og:url" content="https://iweb.uz/">
+  <meta property="og:image" content="https://iweb.uz/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "iWeb.uz",
+    "url": "https://iweb.uz/",
+    "logo": "https://iweb.uz/img/favicon.svg",
+    "description": "Веб-студия: разработка сайтов, интернет-магазинов, веб-приложений и SEO-продвижение в Узбекистане.",
+    "email": "info@iweb.uz",
+    "telephone": "+998000000000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ташкент",
+      "addressCountry": "UZ"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="./" class="logo" aria-label="iWeb.uz — на главную">
+        <span class="logo__mark">i</span><span class="logo__text">Web<span class="logo__dot">.uz</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#process" class="nav__link">Как работаем</a></li>
+          <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="blog/" class="nav__link">Блог</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta">Обсудить проект</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Главный слайдер">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__slides" id="heroSlides">
+          <article class="slide is-active" aria-roledescription="slide" aria-label="1 из 3">
+            <span class="slide__tag"><span class="pulse"></span> Веб-студия · Ташкент</span>
+            <h1 class="slide__title">Создаём сайты <span class="gradient-text glitch" data-text="будущего">будущего</span> для вашего бизнеса</h1>
+            <p class="slide__text">Дизайн, разработка и продвижение — от идеи до первых заявок. Быстрые, адаптивные и готовые к SEO сайты.</p>
+            <div class="slide__actions">
+              <a href="#contact" class="btn btn--primary">Получить консультацию</a>
+              <a href="#portfolio" class="btn btn--ghost">Наши работы</a>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="2 из 3">
+            <span class="slide__tag"><span class="pulse"></span> E-commerce</span>
+            <h2 class="slide__title">Интернет-магазины, которые <span class="gradient-text">продают 24/7</span></h2>
+            <p class="slide__text">Каталог, корзина, онлайн-оплата Payme и Click, интеграция с 1С и службами доставки по Узбекистану.</p>
+            <div class="slide__actions">
+              <a href="#services" class="btn btn--primary">Подробнее</a>
+              <a href="#contact" class="btn btn--ghost">Рассчитать стоимость</a>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="3 из 3">
+            <span class="slide__tag"><span class="pulse"></span> SEO &amp; Growth</span>
+            <h2 class="slide__title">Выводим сайты в <span class="gradient-text">ТОП Google и Яндекс</span></h2>
+            <p class="slide__text">Техническая оптимизация, контент-маркетинг и блог, аналитика. Растим органический трафик и заявки.</p>
+            <div class="slide__actions">
+              <a href="blog/" class="btn btn--primary">Читать блог</a>
+              <a href="#contact" class="btn btn--ghost">Аудит сайта</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Футуристичный визуал -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orb">
+            <div class="orb__core"></div>
+            <div class="orb__ring orb__ring--1"></div>
+            <div class="orb__ring orb__ring--2"></div>
+            <div class="orb__ring orb__ring--3"></div>
+            <span class="orb__sat orb__sat--1"></span>
+            <span class="orb__sat orb__sat--2"></span>
+          </div>
+          <div class="hud hud--1">
+            <span class="hud__label">PageSpeed</span>
+            <span class="hud__value">98<small>/100</small></span>
+            <span class="hud__bar"><span style="width:98%"></span></span>
+          </div>
+          <div class="hud hud--2">
+            <span class="hud__label">Конверсия</span>
+            <span class="hud__value">+147%</span>
+            <svg class="hud__spark" viewBox="0 0 100 30"><polyline points="0,26 15,22 30,24 45,15 60,17 75,8 100,3" /></svg>
+          </div>
+          <div class="hud hud--3">
+            <span class="hud__code">&lt;iweb status="online" /&gt;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__controls container">
+        <button class="slider-btn" id="heroPrev" aria-label="Предыдущий слайд">&#8592;</button>
+        <div class="slider-dots" id="heroDots" role="tablist" aria-label="Выбор слайда"></div>
+        <button class="slider-btn" id="heroNext" aria-label="Следующий слайд">&#8594;</button>
+        <div class="slider-progress"><span id="heroProgress"></span></div>
+      </div>
+
+      <a href="#services" class="scroll-hint" aria-label="Прокрутить вниз"><span></span></a>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" aria-label="Цифры">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="120">0</span><span class="stat__plus">+</span><p>проектов запущено</p></div>
+        <div class="stat reveal"><span class="stat__num" data-count="8">0</span><span class="stat__plus">лет</span><p>на рынке Узбекистана</p></div>
+        <div class="stat reveal"><span class="stat__num" data-count="95">0</span><span class="stat__plus">%</span><p>клиентов возвращаются</p></div>
+        <div class="stat reveal"><span class="stat__num" data-count="24">0</span><span class="stat__plus">/7</span><p>поддержка проектов</p></div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">// Услуги</span>
+          <h2 class="section__title">Полный цикл <span class="gradient-text">digital-разработки</span></h2>
+          <p class="section__lead">Берём на себя всё: от аналитики и дизайна до запуска, продвижения и поддержки.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg>
+            </div>
+            <h3>Корпоративные сайты</h3>
+            <p>Представительские сайты, которые вызывают доверие и превращают посетителей в клиентов.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+            </div>
+            <h3>Интернет-магазины</h3>
+            <p>E-commerce с онлайн-оплатой, личным кабинетом и интеграциями с учётными системами.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3>Landing Page</h3>
+            <p>Одностраничники под рекламу с высокой конверсией и быстрым запуском — от 7 дней.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+            </div>
+            <h3>Веб-приложения</h3>
+            <p>CRM, личные кабинеты, сервисы и Telegram-боты под задачи вашего бизнеса.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <h3>SEO-продвижение</h3>
+            <p>Техническая оптимизация, семантика, контент и ссылки. Рост в Google и Яндекс.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Поддержка и хостинг</h3>
+            <p>Обновления, резервные копии, защита и мониторинг. Ваш сайт всегда онлайн.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">// Процесс</span>
+          <h2 class="section__title">Как мы <span class="gradient-text">работаем</span></h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline__item reveal"><span class="timeline__step">01</span><h3>Бриф и анализ</h3><p>Изучаем бизнес, конкурентов и целевую аудиторию, формируем ТЗ.</p></li>
+          <li class="timeline__item reveal"><span class="timeline__step">02</span><h3>Прототип и дизайн</h3><p>Проектируем структуру и создаём уникальный дизайн в Figma.</p></li>
+          <li class="timeline__item reveal"><span class="timeline__step">03</span><h3>Разработка</h3><p>Чистый код, адаптивная вёрстка, высокая скорость загрузки.</p></li>
+          <li class="timeline__item reveal"><span class="timeline__step">04</span><h3>Запуск и рост</h3><p>Тестирование, публикация, SEO, аналитика и развитие проекта.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">// Портфолио</span>
+          <h2 class="section__title">Избранные <span class="gradient-text">проекты</span></h2>
+        </header>
+        <div class="filters" role="group" aria-label="Фильтр проектов">
+          <button class="filter is-active" data-filter="all">Все</button>
+          <button class="filter" data-filter="web">Сайты</button>
+          <button class="filter" data-filter="shop">Магазины</button>
+          <button class="filter" data-filter="app">Приложения</button>
+        </div>
+        <div class="works">
+          <article class="work reveal" data-cat="shop">
+            <div class="work__img work__img--1"><span>Shop</span></div>
+            <div class="work__body"><span class="work__cat">Интернет-магазин</span><h3>Магазин электроники</h3></div>
+          </article>
+          <article class="work reveal" data-cat="web">
+            <div class="work__img work__img--2"><span>Corp</span></div>
+            <div class="work__body"><span class="work__cat">Корпоративный сайт</span><h3>Строительная компания</h3></div>
+          </article>
+          <article class="work reveal" data-cat="app">
+            <div class="work__img work__img--3"><span>CRM</span></div>
+            <div class="work__body"><span class="work__cat">Веб-приложение</span><h3>CRM для логистики</h3></div>
+          </article>
+          <article class="work reveal" data-cat="web">
+            <div class="work__img work__img--4"><span>Land</span></div>
+            <div class="work__body"><span class="work__cat">Landing Page</span><h3>Образовательный центр</h3></div>
+          </article>
+          <article class="work reveal" data-cat="shop">
+            <div class="work__img work__img--5"><span>Fashion</span></div>
+            <div class="work__body"><span class="work__cat">Интернет-магазин</span><h3>Бренд одежды</h3></div>
+          </article>
+          <article class="work reveal" data-cat="app">
+            <div class="work__img work__img--6"><span>Bot</span></div>
+            <div class="work__body"><span class="work__cat">Telegram-бот</span><h3>Сервис доставки еды</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__text reveal">
+          <span class="eyebrow">// О нас</span>
+          <h2 class="section__title">Команда, которая <span class="gradient-text">думает о результате</span></h2>
+          <p>iWeb.uz — команда дизайнеров, разработчиков и маркетологов из Ташкента. Мы не просто делаем сайты — мы создаём инструменты, которые приносят бизнесу клиентов и прибыль.</p>
+          <ul class="checklist">
+            <li>Фиксированная цена и сроки в договоре</li>
+            <li>Сайты на русском, узбекском и английском языках</li>
+            <li>Оптимизация под Core Web Vitals и SEO с первого дня</li>
+            <li>Обучение работе с сайтом и гарантия</li>
+          </ul>
+        </div>
+        <div class="about__visual reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar"><span></span><span></span><span></span></div>
+            <pre class="terminal__body"><code id="typeCode"></code><span class="caret">▍</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG PREVIEW ===== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <header class="section__head section__head--row reveal">
+          <div>
+            <span class="eyebrow">// Блог</span>
+            <h2 class="section__title">Полезное о <span class="gradient-text">сайтах и SEO</span></h2>
+          </div>
+          <a href="blog/" class="btn btn--ghost">Все статьи</a>
+        </header>
+        <div class="posts">
+          <article class="post-card reveal">
+            <a href="blog/skolko-stoit-sajt-v-tashkente.html" class="post-card__link">
+              <div class="post-card__cover post-card__cover--1"></div>
+              <div class="post-card__body">
+                <time datetime="2026-10-05">5 октября 2026</time>
+                <h3>Сколько стоит сайт в Ташкенте: из чего складывается цена</h3>
+                <p>Разбираем, что влияет на стоимость разработки и как не переплатить.</p>
+              </div>
+            </a>
+          </article>
+          <article class="post-card reveal">
+            <a href="blog/seo-prodvizhenie-v-uzbekistane.html" class="post-card__link">
+              <div class="post-card__cover post-card__cover--2"></div>
+              <div class="post-card__body">
+                <time datetime="2026-09-24">24 сентября 2026</time>
+                <h3>SEO-продвижение в Узбекистане: пошаговый план на старте</h3>
+                <p>Что сделать в первые 90 дней, чтобы сайт начал получать трафик.</p>
+              </div>
+            </a>
+          </article>
+          <article class="post-card reveal">
+            <a href="blog/lending-ili-mnogostranichnyj-sajt.html" class="post-card__link">
+              <div class="post-card__cover post-card__cover--3"></div>
+              <div class="post-card__body">
+                <time datetime="2026-09-10">10 сентября 2026</time>
+                <h3>Лендинг или многостраничный сайт: что выбрать бизнесу</h3>
+                <p>Сравниваем форматы и помогаем выбрать под ваши задачи.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <span class="eyebrow">// Контакты</span>
+          <h2 class="section__title">Обсудим ваш <span class="gradient-text">проект?</span></h2>
+          <p>Оставьте заявку — свяжемся в течение 30 минут в рабочее время и бесплатно оценим проект.</p>
+          <ul class="contact__list">
+            <li><span>Телефон</span><a href="tel:+998000000000">+998 (00) 000-00-00</a></li>
+            <li><span>E-mail</span><a href="mailto:info@iweb.uz">info@iweb.uz</a></li>
+            <li><span>Telegram</span><a href="https://t.me/iweb_uz" rel="noopener" target="_blank">@iweb_uz</a></li>
+            <li><span>Адрес</span>г. Ташкент, Узбекистан</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required autocomplete="name">
+          </div>
+          <div class="form__row">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+998 __ ___ __ __" required autocomplete="tel">
+          </div>
+          <div class="form__row">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option>Корпоративный сайт</option>
+              <option>Интернет-магазин</option>
+              <option>Landing Page</option>
+              <option>Веб-приложение</option>
+              <option>SEO-продвижение</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" placeholder="Кратко опишите задачу"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="./" class="logo"><span class="logo__mark">i</span><span class="logo__text">Web<span class="logo__dot">.uz</span></span></a>
+        <p>Разработка сайтов и digital-решений в Узбекистане.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="blog/">Блог</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <p class="footer__copy">© <span class="year"></span> iWeb.uz. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">&#8593;</button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
